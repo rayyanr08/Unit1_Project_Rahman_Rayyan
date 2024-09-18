@@ -20,8 +20,8 @@ public class Main {
         Scanner tax = new Scanner(System.in);
         System.out.println("Please enter the tip percentage: ");
         String tip = tax.nextLine();
-        Double tipDecimal = Double.parseDouble(tip) / 100;
-        Double totalTip = Double.parseDouble(bill) * tipDecimal;
+        double tipDecimal = Double.parseDouble(tip) / 100;
+        double totalTip = Double.parseDouble(bill) * tipDecimal;
 
         // Initializing number of people
         Scanner ppl = new Scanner(System.in);
