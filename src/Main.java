@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
-
+// using scanner to take input and decimalformat to convert numbers to the nearest cent
 
 public class Main {
     public static void main(String[] args) {
