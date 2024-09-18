@@ -37,11 +37,9 @@ public class Main {
         // Outputting everything and formatting every value as a decimal so it rounds to the nearest cent
         DecimalFormat df = new DecimalFormat("#.00");
         System.out.println("Your total bill including tip is: $" + df.format(totalBill));
-        System.out.println();
         System.out.println("Your total tip amount is: $" + df.format(totalTip));
-        System.out.println();
+        System.out.println("--------------------------");
         System.out.println("The total tip per person is: $" + df.format(tipPerPerson));
-        System.out.println();
         System.out.println("Your total per person including tip is: $" + df.format(totalBill/Integer.parseInt(numOfPeople)));
 
 
