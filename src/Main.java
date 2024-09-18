@@ -14,24 +14,24 @@ public class Main {
 
         Scanner money = new Scanner(System.in);
         System.out.println("Please enter the bill: ");
-        String bill = money.nextLine();
+        String billAmount = money.nextLine();
 
         // initializing tip value and converting it into a decimal for easier calculations
-        Scanner tax = new Scanner(System.in);
+        Scanner scannerTax = new Scanner(System.in);
         System.out.println("Please enter the tip percentage: ");
-        String tip = tax.nextLine();
-        double tipDecimal = Double.parseDouble(tip) / 100;
-        double totalTip = Double.parseDouble(bill) * tipDecimal;
+        String tipPercentage = scannerTax.nextLine();
+        double tipDecimal = Double.parseDouble(tipPercentage) / 100;
+        double totalTip = Double.parseDouble(billAmount) * tipDecimal;
 
         // Initializing number of people
-        Scanner ppl = new Scanner(System.in);
+        Scanner scannerPpl = new Scanner(System.in);
         System.out.println("Please enter the number of people: ");
-        String numOfPeople = ppl.nextLine();
+        String numOfPeople = scannerPpl.nextLine();
         System.out.println();
 
 
         // Calculating values(Tip per person, total bill, total bill per person)
-        double totalBill = Double.parseDouble(bill) * tipDecimal + Double.parseDouble(bill);
+        double totalBill = Double.parseDouble(billAmount) * tipDecimal + Double.parseDouble(billAmount);
         double tipPerPerson = totalTip / Integer.parseInt(numOfPeople);
 
         // Outputting everything and formatting every value as a decimal so it rounds to the nearest cent
