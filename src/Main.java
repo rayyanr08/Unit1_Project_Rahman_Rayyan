@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 
 public class Main {
@@ -20,7 +21,9 @@ public class Main {
         System.out.println("Please enter the tip percentage: ");
         String tip = tax.nextLine();
         Double tipDecimal = Double.parseDouble(tip) / 100;
+        Double totalTip = Double.parseDouble(bill) * tipDecimal;
 
+        // Initializing number of people
         Scanner ppl = new Scanner(System.in);
         System.out.println("Please enter the number of people: ");
         String numOfPeople = ppl.nextLine();
@@ -28,7 +31,17 @@ public class Main {
 
         // Calculating values(Tip per person, total bill, total bill per person)
         double totalBill = Double.parseDouble(bill) * tipDecimal + Double.parseDouble(bill);
-        double tipPerPerson = totalBill / int.Parseint(numOfPeople);
+        double tipPerPerson = totalTip / Integer.parseInt(numOfPeople);
+
+        // Outputting everything
+        System.out.println("Your total bill including tip is: $" + totalBill);
+        System.out.println("Your total tip amount is: $" + totalTip);
+        System.out.println("The total tip per person is: $" + tipPerPerson);
+        System.out.println("Your total per person including tip is: $" + (totalBill/Integer.parseInt(numOfPeople)));
+
+
+
+
     }
 
     }
